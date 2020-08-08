@@ -5,6 +5,7 @@ RobotRover Problem:
 Just as defined in the problem, I have simulated the same.
 
 Compile : g++ --std=c++11 RobotRover.cpp
+Assumptions are : The Robot will start at (0,0) facing North in the beginning.
 
 
 String Match:
