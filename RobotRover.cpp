@@ -112,26 +112,25 @@ int main()
     do {
             if (ch == 0)
                 cout << message << endl;
-
+            
+            cout << "> ";
             cin >> ch;
 
             switch(ch) {
                 case 'L': robot.setDirection('L');
-                           robot.getDescription();
-                          cout << "> "; 
-                            break;
+                          robot.getDescription();
+                          break;
                 case 'R' : robot.setDirection('R');
                            robot.getDescription();
-                          cout << "> " ;
-                            break;
+                           break;
                 case 'M' : robot.moveAhead();
                            robot.getDescription();
-                          cout << "> " ;
-                            break;
-                case '?' : cout << message << endl ;
-                          cout << "> ";
                            break;
-                case 'Q' :   cout << " Robot shutting down " <<endl; break;
+                case '?' : cout << message << endl ;
+                           break;
+                case 'Q' : cout << " Robot shutting down " <<endl; break;
+                
+                default: cout << " Invalid Option " << endl; break;
 
             }
 
